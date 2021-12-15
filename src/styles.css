@@ -1,7 +1,46 @@
-h1 {
-  font-family: "Lora", serif;
+:root {
+  --primary-color: #f9f7fe;
+  --secondary-color: #7264fa;
+  --alternative-color: #5685b5;
+  --heading-font-family: "Lora", serif;
+  --deafult-font-family: "Lato", sans-serif;
 }
 
-p {
-  font-family: "Lato", sans-serif;
+.hero {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px 80px 20px;
+}
+
+.hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+}
+
+.hero p {
+  font-family: var(--default-font-family);
+  font-size: 28px;
+}
+
+.btn-branding {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 450;
+  padding: 10px 25px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+.btn-branding:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.social-icons {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
 }
