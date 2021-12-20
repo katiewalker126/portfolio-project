@@ -45,10 +45,6 @@
   margin-top: 30px;
 }
 
-.container {
-  margin: 80px 100px;
-}
-
 .featured-projects h2 {
   padding: 60px 0px;
   text-align: center;
@@ -98,7 +94,7 @@
     font-size: 26px;
   }
   .container {
-    margin: 0;
+    margin: 0 auto;
   }
   .project-description,
   .featured-projects {
