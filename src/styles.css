@@ -243,6 +243,17 @@ footer .social-links a:hover {
   transition: all 100ms ease-in-out;
 }
 
+footer .signature {
+  text-align: center;
+  font-size: 16px;
+  margin: 20px;
+}
+
+footer .signature a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 @media (max-width: 769px) {
   nav ul {
     padding: 0;
