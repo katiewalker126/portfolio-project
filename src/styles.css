@@ -8,7 +8,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--heading-font-family);
 }
 
@@ -53,7 +54,7 @@ nav a {
 .active,
 nav a:hover {
   color: var(--secondary-color);
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .hero {
@@ -84,7 +85,7 @@ nav a:hover {
   background-color: white;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .social-icons {
@@ -131,7 +132,7 @@ nav a:hover {
 .learn-more-btn:hover {
   background-color: var(--secondary-color);
   color: white;
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .content {
@@ -160,7 +161,7 @@ nav a:hover {
 
 .portfolio-image {
   width: 400px;
-  border-radius: 15px;
+  border-radius: 750px;
   margin: 30px 0px 0px 60px;
 }
 
@@ -181,6 +182,65 @@ nav a:hover {
 .contact-links:hover {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+footer {
+  margin: 100px 0 60px 0;
+  padding: 0 12px;
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  margin: 50px 0 50px 0;
+  padding: 40px 150px 10px 150px;
+}
+
+footer .contact-me {
+  margin: 10px 0 0 0;
+}
+
+footer h4 {
+  font-size: 40px;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+footer .email-link {
+  text-align: center;
+  font-size: 22px;
+}
+
+footer .email-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+footer .email-link a:hover {
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px;
+}
+
+footer .social-links a {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  padding: 13px 0;
+  margin: 0 20px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 769px) {
@@ -225,5 +285,12 @@ nav a:hover {
   }
   .projects-image {
     width: 330px;
+  }
+  footer .email-link {
+    font-size: 20px;
+  }
+  footer .social-links {
+    font-size: 16px;
+    margin: 30px 10px;
   }
 }
