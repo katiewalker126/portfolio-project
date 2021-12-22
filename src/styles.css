@@ -1,7 +1,6 @@
 :root {
-  --primary-color: #f9f7fe;
-  --secondary-color: #7264fa;
-  --alternative-color: #5685b5;
+  --primary-color: #7264fa;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Lora", serif;
   --deafult-font-family: "Lato", sans-serif;
 }
@@ -14,7 +13,8 @@ h4 {
 }
 
 p,
-li {
+li,
+a {
   font-family: var(--default-font-family);
 }
 
@@ -34,7 +34,6 @@ nav {
 
 nav ul {
   padding: 15px 0 0 0;
-  margin: 0;
 }
 
 nav li {
@@ -53,14 +52,14 @@ nav a {
 
 .active,
 nav a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
 
 .hero {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px 90px 20px;
+  padding: 150px 20px 150px 20px;
 }
 
 .hero h1 {
@@ -71,57 +70,33 @@ nav a:hover {
   font-size: 28px;
 }
 
-.btn-branding {
-  background-color: var(--secondary-color);
-  color: white;
-  font-size: 18px;
-  font-weight: 450;
-  padding: 10px 25px;
-  margin: 30px 0;
-  border-radius: 6px;
-}
-
-.btn-branding:hover {
-  background-color: white;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  transition: all 100ms ease-in-out;
-}
-
-.social-icons {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 30px;
-}
-
-.featured-projects h2 {
-  padding: 60px 0px;
+.homepage-subheading {
+  padding: 30px 0px 50px 0;
   text-align: center;
   font-size: 45px;
-  font-weight: bold;
-  font-family: var(--heading-font-family);
+}
+
+.row {
+  margin-bottom: 60px;
 }
 
 .project-description {
   padding: 60px 40px 60px 40px;
 }
 
-.project-description h2 {
+.project-description h3 {
   padding-bottom: 40px;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: var(--heading-font-family);
+  font-size: 28px;
 }
 
 .project-description p {
   font-size: 20px;
-  font-family: var(--default-font-family);
 }
 
 .learn-more-btn {
   background-color: white;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   font-size: 18px;
   font-weight: 450;
   padding: 10px 25px;
@@ -130,42 +105,52 @@ nav a:hover {
 }
 
 .learn-more-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: white;
   transition: all 100ms ease-in-out;
 }
 
-.content {
-  padding: 160px 40px 90px 40px;
-}
-
-.content h1 {
-  font-size: 50px;
-}
-
-.content h2 {
-  font-size: 22px;
+.page-content {
+  padding: 50px 40px 20px 40px;
   line-height: 1.5;
 }
 
-.content p {
-  font-weight: 400;
-  line-height: 1.6;
+.page-content h2 {
+  font-size: 22px;
 }
 
 .shecodes-link {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 450;
 }
 
-.portfolio-image {
-  width: 400px;
-  border-radius: 750px;
-  margin: 30px 0px 0px 60px;
+.btn-branding {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 450;
+  padding: 10px 25px;
+  margin: 40px 0 40px 0;
+  border-radius: 6px;
 }
 
-.projects-page {
+.btn-branding:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+.portfolio-image {
+  width: 400px;
+  border-radius: 50%;
+  margin: 0 0px 0px 60px;
+}
+
+.about-page,
+.projects-page,
+.contact-page {
   text-align: center;
 }
 
@@ -173,73 +158,69 @@ nav a:hover {
   width: 500px;
 }
 
-.contact-links {
+.contact-page-links {
   color: black;
   text-decoration: none;
   opacity: 80%;
 }
 
-.contact-links:hover {
-  color: var(--secondary-color);
+.contact-page-links:hover {
+  color: var(--primary-color);
   text-decoration: none;
 }
 
+.contact-me-image {
+  width: 250px;
+  border-radius: 4px;
+  margin: 12px 0 0 0;
+}
+
 footer {
-  margin: 100px 0 60px 0;
+  margin-bottom: 60px;
   padding: 0 12px;
 }
 
 footer .contact-box {
-  background: var(--primary-color);
-  margin: 50px 0 50px 0;
-  padding: 40px 150px 10px 150px;
-}
-
-footer .contact-me {
-  margin: 10px 0 0 0;
+  background: var(--secondary-color);
+  margin-bottom: 30px;
+  padding: 30px 100px 10px 100px;
 }
 
 footer h4 {
-  font-size: 40px;
-}
-
-footer p {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 footer .email-link {
   text-align: center;
-  font-size: 22px;
+  font-weight: 500;
 }
 
 footer .email-link a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
 }
 
 footer .email-link a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
 
 footer .social-links {
   text-align: center;
   font-size: 26px;
-  margin: 30px;
+  margin: 20px 0 10px 0;
 }
 
 footer .social-links a {
-  color: var(--secondary-color);
-  background: var(--primary-color);
+  color: black;
   border-radius: 50%;
   padding: 13px 0;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 footer .social-links a:hover {
   color: white;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
 
@@ -251,7 +232,7 @@ footer .signature {
 
 footer .signature a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 769px) {
@@ -271,22 +252,22 @@ footer .signature a {
   .container {
     margin: 0 auto;
   }
-  .featured-projects,
-  .project-description {
+  .project-description,
+  .contact-page {
     text-align: center;
     padding: 0;
   }
-  .featured-projects h2 {
+  .homepage-subheading {
     font-size: 32px;
   }
   .project-description h2 {
     font-size: 26px;
   }
-  .content {
+  .page-content {
     text-align: center;
     padding: 40px 10px;
   }
-  .content h1 {
+  .page-content h1 {
     font-size: 34px;
   }
   .portfolio-image {
@@ -297,11 +278,13 @@ footer .signature a {
   .projects-image {
     width: 330px;
   }
-  footer .email-link {
+  footer .contact-box {
+    padding: 30px 30px 10px 30px;
+  }
+  footer h4 {
     font-size: 20px;
   }
   footer .social-links {
     font-size: 16px;
-    margin: 30px 10px;
   }
 }
